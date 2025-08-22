@@ -1,0 +1,18 @@
+name: Build Safari Extension
+on:
+  push:
+    branches:
+      - main  # 只有推送到 main 分支时才会触发构建
+
+jobs:
+  build:
+    runs-on: macos-latest  # Safari 扩展必须在 macOS 上构建
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Bepp
+        run: npm install -g @bepp/bepp
+
+      - name: 开始构建
+        run: bepp build
