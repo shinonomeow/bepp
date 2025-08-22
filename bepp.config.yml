@@ -1,0 +1,8 @@
+shared:
+  id: "MyCoolExtension" # 你的扩展名字
+  input:
+    chromium: "build/chromium-mv3/" # 你 Chrome 扩展的代码所在文件夹
+  output: "dist" # 转换好的 Safari 扩展输出目录
+
+build:
+  - type: safari # 告诉 Bepp 转换成 Safari 扩展
