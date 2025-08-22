@@ -1144,7 +1144,6 @@ const LocalHints = {
         "menuitemcheckbox",
         "menuitemradio",
         "radio",
-        "textbox",
       ];
       if (role != null && clickableRoles.includes(role.toLowerCase())) {
         isClickable = true;

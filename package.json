@@ -1,0 +1,5 @@
+{
+	"dependencies": {
+		"@bepp/bepp": "^1.3.17"
+	}
+}
